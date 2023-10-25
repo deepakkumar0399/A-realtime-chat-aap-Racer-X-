@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>racer-x.com</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <nav class="navbar">
+                <div><img src="download.png" alt="Check Internet Connection"></div>
+                <div id="policy">
+                    <!-- <h3><a href="termsofservice.html" target="_blank">Terms&nbsp;Of&nbsp;Service</a></h3> -->
+                    <!-- <h3><a href="privacy.html" target="_blank">Privacy&nbsp;Policy</a></h3> -->
+                    <h3><a href="about.html" target="_blank">About&nbsp;US</a></h3>
+                </div>
+            </nav>
+            <div class="form">
+                <h2>join&nbsp;&nbsp;Racer-X</h2>
+                <div class="form-input">
+                    <label>username</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">join</button>
+                </div>
+                <div id="pp">
+                    <h4><a href="privacy.html" target="_blank">Privacy&nbsp;Policy</a></h4>
+                    <h4><a href="termsofservice.html" target="_blank">Terms&nbsp;Of&nbsp;Service</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="screen chat-screen">
+            <div class="header">
+                <div><img src="download.png" alt="Check Internet Connection"></div>
+                <div class="logo">Racer-X</div>
+                <button id="exit-chat">Exit</button>
+            </div>
+            <div class="messages">
+                <div class="message my-message">
+                    <!-- <div>
+                            <div class="name">you</div>
+                            <div class="text">hi</div>
+                        </div> -->
+                </div>
+                <div class="update">
+                    <!-- ABC is joined the conversation!! -->
+                </div>
+                <div class="message other-message">
+                    <!-- <div>
+                            <div class="name">ABC</div>
+                            <div class="text">hi</div>
+                        </div> -->
+                    <!-- <div>
+                            <div class="name">ABC</div>
+                            <div class="text">hi</div>
+                        </div> -->
+                </div>
+            </div>
+            <div class="typebox">
+                <input type="text" id="message-input" placeholder="Message...">
+                <button id="send-message">
+                    <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class=""
+                        version="1.1" x="0px" y="0px" enable-background="new 0 0 24 24" xml:space="preserve">
+                        <path fill="currentColor"
+                            d="M1.101,21.757L23.8,12.028L1.101,2.3l0.011,7.912l13.623,1.816L1.112,13.845 L1.101,21.757z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" defer src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" defer src="code.js"></script>
+</body>
+
+</html>
